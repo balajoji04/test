@@ -1,7 +1,8 @@
 pipeline {
-  agent any {
+  agent {
     dockerfile {
         filename 'dockerfile'
+        label "docker-nodes"
         args '-v /tmp:/tmp'
     }
   }
