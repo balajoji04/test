@@ -1,5 +1,5 @@
 pipeline {
-  agent  any {
+  agent any {
     dockerfile {
         filename 'dockerfile'
         args '-v /tmp:/tmp'
